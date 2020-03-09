@@ -20,9 +20,9 @@ class MediaInfoCommandRunner
     protected $process;
 
     /**
-     * @var string
+     * @var array
      */
-    protected $command = 'mediainfo';
+    protected $command = ['mediainfo'];
 
     /**
      * @var array
@@ -31,14 +31,14 @@ class MediaInfoCommandRunner
 
     /**
      * @param string  $filePath
-     * @param string  $command
+     * @param array  $command
      * @param array   $arguments
      * @param Process $process
      * @param bool    $forceOldXmlOutput
      */
     public function __construct(
         $filePath,
-        $command = null,
+        array $command = null,
         array $arguments = null,
         Process $process = null,
         $forceOldXmlOutput = false
@@ -66,24 +66,13 @@ class MediaInfoCommandRunner
         $env = [
             'LANG' => setlocale(LC_CTYPE, 0),
         ];
-        $finalCommand = [$this->command];
+        $finalCommand = $this->command;
 
-        $i = 0;
         foreach ($args as $value) {
-            $var = 'MEDIAINFO_VAR_'.$i++;
-            $finalCommand[] = '"$'.$var.'"';
-            $env[$var] = $value;
+            $finalCommand[] = $value;
         }
 
-        $finalCommandString = implode(' ', $finalCommand);
-
-        if (null !== $process) {
-            $process->setCommandLine($finalCommandString);
-            $process->setEnv($env);
-            $this->process = $process;
-        } else {
-            $this->process = new Process($finalCommandString, null, $env);
-        }
+        $this->process = new Process($finalCommand, null, $env);
     }
 
     /**
