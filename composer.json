@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "imaus87\\MediaInfo\\": "src/"
+            "Mhor\\MediaInfo\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "imaus87\\MediaInfo\\Test\\": "test/"
+            "Mhor\\MediaInfo\\Test\\": "test/"
         }
     },
     "extra": {
