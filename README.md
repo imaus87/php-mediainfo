@@ -1,7 +1,7 @@
 # Php-MediaInfo
 
-This is a for of Mhor/php-mediainfo,
-Added supprt for PHP 7.4 and Symfony 5.0
+This is a fork of Mhor/php-mediainfo,
+Added support for PHP 7.4 and Symfony 5.0
 
 ## Introduction
 
