@@ -1,12 +1,12 @@
 {
-    "name": "mhor/php-mediainfo",
+    "name": "imaus87/php-mediainfo",
     "type": "library",
     "description": "PHP wrapper around the mediainfo command",
     "license": "MIT",
     "authors": [
         {
-            "name": "mhor",
-            "email": "maxime.horcholle@gmail.com"
+            "name": "Maurice Willems",
+            "email": "mauricewillems@gmail.com"
         }
     ],
     "require": {
