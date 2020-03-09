@@ -1,4 +1,7 @@
-# Php-MediaInfo [![Build Status](https://travis-ci.org/mhor/php-mediainfo.svg?branch=master)](https://travis-ci.org/mhor/php-mediainfo) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mhor/php-mediainfo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mhor/php-mediainfo/?branch=master) [![Scrutinizer Coverage](https://img.shields.io/scrutinizer/coverage/g/mhor/php-mediainfo.svg?maxAge=2592000)](https://scrutinizer-ci.com/g/mhor/php-mediainfo/) [![Packagist](https://img.shields.io/packagist/v/mhor/php-mediainfo.svg)](https://packagist.org/packages/mhor/php-mediainfo) [![Packagist](https://img.shields.io/packagist/dt/mhor/php-mediainfo.svg)](https://packagist.org/packages/mhor/php-mediainfo) [![StyleCI](https://styleci.io/repos/27673427/shield?style=flat)](https://styleci.io/repos/27673427)
+# Php-MediaInfo
+
+This is a for of Mhor/php-mediainfo,
+Added supprt for PHP 7.4 and Symfony 5.0
 
 ## Introduction
 
@@ -33,7 +36,7 @@ $ brew install mediainfo
 To use this library install it through [Composer](https://getcomposer.org/), run:
 
 ```bash
-$ composer require mhor/php-mediainfo
+$ composer require imaus87/php-mediainfo
 ```
 
 ## How to use
